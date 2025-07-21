@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Gestión de Usuarios</title>
+  <link rel="stylesheet" href="/Frontend/css/usuarios.css">
+  <script defer src="/Frontend/js/usuarios.js"></script>
+</head>
+<body>
+  <header class="encabezado">
+    <h1>🔧 Sistema de Reportes de Infraestructura</h1>
+  </header>
+
+  <nav class="menu">
+    <ul>
+      <li><a href="/Frontend/index.html">🏠 Dashboard</a></li>
+      <li><a href="/Frontend/incidencias/incidencia.html">📝 Incidencias</a></li>
+      <li><a href="/Frontend/reportes.html">📊 Reportes</a></li>
+      <li><a href="/Frontend/usuarios.html" class="activo">👤 Usuarios</a></li>
+    </ul>
+  </nav>
+
+  <main class="contenido">
+    <table class="tabla">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Cargo</th>
+          <th>Resoluciones</th>
+          <th>Departamento</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr onclick="mostrarInfoUsuario('Juan Pérez', 'Técnico de redes', 12, 'Infraestructura', 'juan.perez@empresa.com')">
+          <td>Juan Pérez</td>
+          <td>Técnico de redes</td>
+          <td>12</td>
+          <td>Infraestructura</td>
+        </tr>
+        <tr onclick="mostrarInfoUsuario('Laura Gómez', 'Ingeniera de soporte', 8, 'Soporte Técnico', 'laura.gomez@empresa.com')">
+          <td>Laura Gómez</td>
+          <td>Ingeniera de soporte</td>
+          <td>8</td>
+          <td>Soporte Técnico</td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+
+  <div id="modalUsuario" class="modal">
+    <div class="modal-contenido">
+      <span class="cerrar" onclick="cerrarModal()">&times;</span>
+      <h3>📄 Información del Usuario</h3>
+      <p><strong>Nombre:</strong> <span id="modalNombre"></span></p>
+      <p><strong>Cargo:</strong> <span id="modalCargo"></span></p>
+      <p><strong>Resoluciones:</strong> <span id="modalResoluciones"></span></p>
+      <p><strong>Departamento:</strong> <span id="modalDepartamento"></span></p>
+      <p><strong>Correo:</strong> <span id="modalCorreo"></span></p>
+    </div>
+  </div>
+</body>
+</html>

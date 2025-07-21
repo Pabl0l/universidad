@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reporte de Infraestructura</title>
+  <link rel="stylesheet" href="/Frontend/css/estilos.css" />
+</head>
+<body>
+  <header class="encabezado">
+    <h1>🔧 Sistema de Reportes de Infraestructura</h1>
+  </header>
+
+  <nav class="menu">
+    <ul>
+      <li><a href="/Frontend/index.html" class="activo">🏠 Dashboard</a></li>
+      <li><a href="/Frontend/incidencias/incidencia.html">📝 Incidencias</a></li>
+      <li><a href="/Frontend/reportes.html">📊 Reportes</a></li>
+      <li><a href="/Frontend/usuarios.html">👤 Usuarios</a></li>
+    </ul>
+  </nav>
+
+  <main class="contenido">
+    <section class="tarjetas">
+      <div class="tarjeta">
+        <h3>Incidencias activas</h3>
+        <p id="total-incidencias">--</p>
+      </div>
+      <div class="tarjeta">
+        <h3>Tareas pendientes</h3>
+        <p id="tareas-pendientes">--</p>
+      </div>
+      <div class="tarjeta">
+        <h3>Alertas</h3>
+        <p id="alertas-activas">--</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p>&copy; 2025 Infraestructura IUB</p>
+  </footer>
+
+  <script>
+    document.getElementById("total-incidencias").textContent = 12;
+    document.getElementById("tareas-pendientes").textContent = 5;
+    document.getElementById("alertas-activas").textContent = 3;
+  </script>
+</body>
+</html>

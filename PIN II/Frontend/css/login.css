@@ -1,0 +1,91 @@
+:root {
+  --azul-empresa: #0B152E;
+  --amarillo-empresa: #FCDF2C;
+  --blanco: #ffffff;
+  --gris-suave: #f0f0f0;
+  --gris-texto: #555;
+  --sombra: rgba(0, 0, 0, 0.1);
+}
+
+body.login-body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--azul-empresa);
+  font-family: "Segoe UI", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  background-color: var(--blanco);
+  padding: 2.5rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px var(--sombra);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.login-title {
+  color: var(--azul-empresa);
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+.login-subtitle {
+  color: var(--gris-texto);
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: left;
+}
+
+.login-form label {
+  font-weight: bold;
+  color: var(--gris-texto);
+}
+
+.login-form input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-form button {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background-color: var(--amarillo-empresa);
+  color: var(--azul-empresa);
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+  background-color: #e6c900;
+}
+
+.login-register {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: var(--gris-texto);
+}
+
+.login-register a {
+  color: var(--azul-empresa);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.login-register a:hover {
+  text-decoration: underline;
+}

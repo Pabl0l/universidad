@@ -1,0 +1,106 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Colores institucionales */
+:root {
+  --azul-institucional: #0B152E;
+  --amarillo-institucional: #FCDF2C;
+  --blanco: #ffffff;
+  --gris-claro: #f0f0f0;
+}
+
+/* Estructura general */
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--gris-claro);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Encabezado */
+.encabezado {
+  background-color: var(--azul-institucional);
+  color: var(--amarillo-institucional);
+  padding: 20px;
+  text-align: center;
+}
+
+/* Barra de navegación */
+.menu {
+  background-color: var(--azul-institucional);
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.menu li {
+  margin: 0 10px;
+}
+
+.menu a {
+  color: var(--blanco);
+  text-decoration: none;
+  padding: 15px 20px;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.menu a:hover,
+.menu a.activo {
+  background-color: var(--amarillo-institucional);
+  color: var(--azul-institucional);
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+/* Contenido principal */
+.contenido {
+  flex: 1;
+  padding: 30px;
+}
+
+/* Tarjetas informativas */
+.tarjetas {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.tarjeta {
+  background-color: var(--blanco);
+  border-left: 6px solid var(--amarillo-institucional);
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+}
+
+.tarjeta h3 {
+  color: var(--azul-institucional);
+  margin-bottom: 10px;
+}
+
+.tarjeta p {
+  font-size: 2em;
+  font-weight: bold;
+  color: #444;
+}
+
+/* Pie de página */
+.pie {
+  background-color: var(--azul-institucional);
+  color: var(--blanco);
+  text-align: center;
+  padding: 15px;
+}

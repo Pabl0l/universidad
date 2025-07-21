@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #0b152e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.formulario h2 {
+  color: #0b152e;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.formulario label {
+  display: block;
+  margin-top: 1rem;
+  color: #0b152e;
+}
+
+.formulario input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.formulario button {
+  width: 100%;
+  padding: 0.7rem;
+  background-color: #fcdf2c;
+  color: #0b152e;
+  border: none;
+  border-radius: 5px;
+  margin-top: 1.5rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.formulario button:hover {
+  background-color: #c7ae0b;
+}
+
+.cambio-formulario {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.cambio-formulario a {
+  color: #0b152e;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.cambio-formulario a:hover {
+  text-decoration: underline;
+}

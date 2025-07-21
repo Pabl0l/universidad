@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Incidencias</title>
+  <link rel="stylesheet" href="../css/incidencias.css" />
+</head>
+<body>
+
+  <!-- Barra de navegación -->
+   <header class="encabezado">
+    <h1>🔧 Sistema de Reportes de Infraestructura</h1>
+  </header>
+  <nav class="menu">
+    <ul>
+      <li><a href="../index.html">🏠 Dashboard</a></li>
+      <li><a href="incidencia.html" class="activo">📝 Incidencias</a></li>
+      <li><a href="../reportes.html">📊 Reportes</a></li>
+      <li><a href="../usuarios.html">👤 Usuarios</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contenido principal -->
+  <main class="contenedor">
+    <h2>Registrar Incidencia</h2>
+    <form class="formulario-incidencia">
+      <label for="titulo">Título:</label>
+      <input type="text" id="titulo" name="titulo" placeholder="Resumen breve..." required />
+
+      <label for="descripcion">Descripción:</label>
+      <textarea id="descripcion" name="descripcion" rows="4" placeholder="Describe la situación con detalle..." required></textarea>
+
+      <label for="tipo">Tipo de incidencia:</label>
+      <select id="tipo" name="tipo">
+        <option value="hardware">Hardware</option>
+        <option value="software">Software</option>
+        <option value="infraestructura">Infraestructura</option>
+        <option value="red">Red</option>
+        <option value="otro">Otro</option>
+      </select>
+
+      <label for="prioridad">Prioridad:</label>
+      <select id="prioridad" name="prioridad">
+        <option value="alta">Alta</option>
+        <option value="media">Media</option>
+        <option value="baja">Baja</option>
+      </select>
+
+      <button type="submit">Registrar</button>
+    </form>
+  </main>
+
+</body>
+</html>

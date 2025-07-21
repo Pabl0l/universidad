@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Reportes</title>
+  <link rel="stylesheet" href="/Frontend//css/reportes.css">
+  <script defer src="/Frontend/js/reportes.js"></script>
+</head>
+<body>
+  <header class="encabezado">
+    <h1>🔧 Sistema de Reportes de Infraestructura</h1>
+  </header>
+  <nav class="menu">
+    <ul>
+      <li><a href="../Frontend/index.html">🏠 Dashboard</a></li>
+      <li><a href="../Frontend/incidencias/incidencia.html">📝 Incidencias</a></li>
+      <li><a href="#" class="activo">📊 Reportes</a></li>
+      <li><a href="/Frontend/usuarios.html">👤 Usuarios</a></li>
+    </ul>
+  </nav>
+
+  <main class="contenedor">
+    <table class="tabla-reportes">
+      <thead>
+        <tr>
+          <th>Fecha</th>
+          <th>Ubicación</th>
+          <th>Descripción</th>
+          <th>Estado</th>
+          <th>Revisado</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="fila-reporte" onclick="verDetalles(this)">
+          <td>2025-07-20</td>
+          <td>Bloque A - Aula 101</td>
+          <td>Falla en el proyector</td>
+          <td>
+            <select class="estado" onchange="actualizarEstado(this)">
+              <option value="Pendiente">Pendiente</option>
+              <option value="En proceso">En proceso</option>
+              <option value="OK">OK</option>
+            </select>
+          </td>
+          <td class="tecnico"></td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+</body>
+</html>
